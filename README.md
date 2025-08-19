@@ -58,7 +58,8 @@ HodShop/
 
 - WordPress (PHP 8.1  توصیه می‌شود)  
 - TailwindCSS  
-- PHP, HTML, CSS  
+- PHP
+- HTML
 
 ---
 
