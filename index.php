@@ -1,13 +1,6 @@
 <?php
 get_header();
-
-// چک می‌کنیم ووکامرس فعال باشه
-if ( class_exists('WooCommerce') ) {
-    // مستقیم قالب آرشیو محصولات رو لود می‌کنیم
-    wc_get_template_part('archive', 'product');
-} else {
-    // اگه ووکامرس نصب نبود، محتویات معمول ایندکس نمایش داده بشه
-    ?>
+?>
     <main id="main" class="site-main ">
         <?php
         if (have_posts()) {
@@ -21,8 +14,6 @@ if ( class_exists('WooCommerce') ) {
         }
         ?>
     </main>
-    <?php
-}
-
+<?php
 get_footer();
 ?>
