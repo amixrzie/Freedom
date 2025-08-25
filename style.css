@@ -1,0 +1,79 @@
+/*
+Theme Name: HodCode 2
+Version: 1.2
+
+*/
+
+body {
+    background-color: #F9FAFB;
+    font-family: IRANYekanX, Tahoma;
+}
+
+.onsale {
+    display: none;
+}
+
+.attachment-woocommerce_thumbnail {
+    height: 250px;
+    object-fit: cover;
+}
+
+.main-nav>:last-child {
+    margin-right: auto;
+}
+
+.custom-logo-link {
+    width: 50px;
+}
+
+.bg-blue1 {
+    background-color: #428EFF;
+}
+
+.text-blue1 {
+    color: #428EFF;
+}
+
+.text-gray {
+    color: #677F8B;
+}
+
+.bg-blue2 {
+    background-color: #7092C5;
+}
+
+.text-blue2 {
+    color: #7092C5;
+}
+
+.wpcf7-form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    input,
+    textarea {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        width: 100%;
+        min-height: 40px;
+
+    }
+
+    p {
+        padding-top:10px;
+        line-height: 2;
+        label {
+            display: block;
+
+            span {
+                display: block;
+            }
+        }
+    }
+}
+.wpcf7-submit{
+    background-color: #7092C5;
+    color:white;
+    font-weight: 300;
+}
