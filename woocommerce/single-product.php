@@ -1,11 +1,10 @@
 <?php
 defined('ABSPATH') || exit;
-get_header('shop'); // هماهنگ با ووکامرس مربی
+get_header('shop');
 ?>
 
 <main class="max-w-screen-xl mx-auto px-6 py-6">
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
-        <!-- Sidebar محصولات مشابه -->
         <aside class="bg-white rounded-lg shadow p-4 order-2 lg:order-1 h-fit">
             <h2 class="text-lg font-semibold mb-4 pb-2">محصولات مشابه</h2>
             <div class="flex items-center gap-3 mb-3 border-b border-gray-200 p-2">
@@ -21,8 +20,6 @@ get_header('shop'); // هماهنگ با ووکامرس مربی
                 <span class="text-sm text-gray-700">کنسول ps5</span>
             </div>
         </aside>
-
-        <!-- بخش اصلی محصول -->
         <section class="col-span-1 lg:col-span-3 bg-white rounded-lg shadow p-6 flex flex-col order-1 lg:order-2">
             <?php
             while (have_posts()) : the_post();
@@ -56,7 +53,6 @@ get_header('shop'); // هماهنگ با ووکامرس مربی
                 <?php the_content(); ?>
             </div>
 
-            <!-- دکمه افزودن به سبد خرید -->
             <div class="mb-4 flex justify-start gap-2">
                 <?php
                 echo apply_filters('woocommerce_loop_add_to_cart_link',
@@ -67,8 +63,6 @@ get_header('shop'); // هماهنگ با ووکامرس مربی
                 $product );
                 ?>
             </div>
-
-            <!-- ویژگی‌ها -->
             <?php
                 $features = get_post_meta(get_the_ID(), 'features', true);
                 if(!empty($features)){
